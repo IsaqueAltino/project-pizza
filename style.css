@@ -211,3 +211,47 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
     }
+
+    /* Caixa do player (você pode colocar onde quiser no seu site) */
+.player {
+  text-align: center;
+  background: linear-gradient(100deg, var(--purple), var(--pink));
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  height: 350px; /* Define uma altura fixa para não espalhar */
+  width: 250px; /* Define uma largura fixa para não espalhar */
+  margin: 10px auto; /* Centraliza o bloco se estiver sozinho */
+  border: rgb(252, 249, 249)  1px solid;
+}
+
+/* Foto da capa */
+.capa {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 15px auto; /* Centraliza horizontalmente e mantém o espaço embaixo */
+  object-fit: cover; /* Garante que a foto não fique distorcida */
+}
+
+/* Botão redondo */
+#botao {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #252425;
+  color: rgb(247, 246, 248);
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efeito ao passar o mouse no botão */
+#botao:hover {
+  background: #707070;
+}

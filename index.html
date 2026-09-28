@@ -13,6 +13,8 @@
 <body>
 
 
+
+
   <header class="site-header">
     <nav class="nav container" aria-label="Navegação principal">
       <a class="brand" href="#inicio">FUTURO'S <span>PIZZA</span></a>
@@ -91,6 +93,18 @@
       </div>
     </section>
 
+
+    <!-- player de musica -->
+  <div class="section-heading">
+    <p><span class="eyebrow">Musica do momento</span></p>
+    <div class="player">
+      <img src="./music/capas/a-ha - take on me.jfif" class="capa">
+      <audio id="musica" src="./music/a-ha - take on me.mp4"></audio>
+      <p style="color: white;">a-ha - Take on Me<br><br></p>
+      <button id="botao" class="play">▶</button>
+    </div>
+  </div>
+
     <section id="conceito">
       <div class="container">
         <div class="concept">
@@ -151,38 +165,7 @@
     </div>
   </footer>
 
-  <script>
-    /* =========================================================
-       CARROSSEL:
-       - O intervalo controla a troca automática (em milissegundos).
-       - Para desativar a troca automática, remova o setInterval no final.
-       - Os botões e os indicadores continuam funcionando manualmente.
-       ========================================================= */
-    const slides = Array.from(document.querySelectorAll(".slide"));
-    const dots = Array.from(document.querySelectorAll(".dot"));
-    const previousButton = document.getElementById("prev");
-    const nextButton = document.getElementById("next");
-    let currentSlide = 0;
-    let carouselTimer;
+  <script src="script.js"></script>
 
-    function showSlide(index) {
-      currentSlide = (index + slides.length) % slides.length;
-      slides.forEach((slide, i) => slide.classList.toggle("is-active", i === currentSlide));
-      dots.forEach((dot, i) => dot.setAttribute("aria-current", i === currentSlide ? "true" : "false"));
-    }
-
-    function restartTimer() {
-      clearInterval(carouselTimer);
-      carouselTimer = setInterval(() => showSlide(currentSlide + 1), 6000); // 6000 = 6 segundos
-    }
-
-    previousButton.addEventListener("click", () => { showSlide(currentSlide - 1); restartTimer(); });
-    nextButton.addEventListener("click", () => { showSlide(currentSlide + 1); restartTimer(); });
-    dots.forEach((dot, i) => dot.addEventListener("click", () => { showSlide(i); restartTimer(); }));
-
-    // Atualiza automaticamente o ano no rodapé.
-    document.getElementById("year").textContent = new Date().getFullYear();
-    restartTimer();
-  </script>
 </body>
 </html>
