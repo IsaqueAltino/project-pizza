@@ -1,0 +1,18 @@
+FUTURO'S PIZZA — SITE RESPONSIVO
+
+COMO USAR
+1. Extraia o ZIP.
+2. Abra index.html no navegador para testar.
+3. Para hospedar no GitHub Pages, envie o index.html para a raiz do repositório.
+4. Ative GitHub Pages nas configurações do repositório.
+
+PERSONALIZAÇÃO
+- Cores: no começo do CSS, altere as variáveis dentro de :root.
+- Textos: procure os títulos e parágrafos no HTML e edite diretamente.
+- Fotos do carrossel: altere os endereços url(...) no style de cada .slide.
+- Fotos da galeria: altere o atributo src das imagens.
+- Tempo do carrossel: no JavaScript, altere o valor 6000 (milissegundos).
+- Para acrescentar um cartão: copie um bloco <article class="card"> dentro de .gallery.
+
+OBSERVAÇÃO
+As fotos são carregadas de URLs externas do Unsplash, então o site precisa de internet para exibi-las. Troque por fotos próprias quando tiver as imagens conceituais finais.

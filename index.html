@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Conheça o conceito visual da Futuro's Pizza: pizza, nostalgia e diversão.">
+  <title>Futuro's Pizza</title>
+
+</head>
+<body>
+
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">FUTURO'S <span>PIZZA</span></a>
+      <div class="nav-links">
+        <a href="#galeria">Galeria</a>
+        <a href="#conceito">Nosso conceito</a>
+        <a href="#sobre">Quem somos?</a><br>
+      </div>
+    </nav>
+  </header>
+
+  <p><br>Site ainda em desenvolvimento! pode haver erros ou conteúdo em falta.</p>
+
+  <!-- CARROSSEL. -->
+  <main>
+    <section class="hero container" id="inicio" aria-label="Destaques">
+      <div class="carousel" id="carousel">
+        <!-- SLIDE 1 -->
+        <article class="slide is-active"
+          style="--slide-image: url('/imgs/pizzasinicio.png')">
+          <div class="slide-content">
+            <span class="eyebrow">Uma experiência diferente</span>
+            <h1>Uma viagem aos <span class="gradient-text">anos 80 e 90.</span></h1>
+            <p>Uma proposta que combina pizza, entretenimento e nostalgia em um ambiente temático em Mongaguá.</p>
+            <a class="button" href="#conceito">Explore o conceito <span aria-hidden="true">&nbsp;↘</span></a>
+          </div>
+        </article>
+
+        <!-- SLIDE 2 -->
+        <article class="slide"
+          style="--slide-image: url('/imgs/familiainicio.png')">
+          <div class="slide-content">
+            <span class="eyebrow">Sabor em destaque</span>
+            <h2>Pizza feita para <span class="gradient-text">compartilhar.</span></h2>
+            <p>Sabores e momentos para reunir amigos e família ao redor da mesa.</p>
+            <a class="button" href="/galeria/galeria.html">Ver a galeria <span aria-hidden="true">&nbsp;↘</span></a>
+          </div>
+        </article>
+
+        <!-- SLIDE 3 -->
+        <article class="slide"
+          style="--slide-image: url('/imgs/pizzariainicio.jpeg')">
+          <div class="slide-content">
+            <span class="eyebrow">Diversão e nostalgia</span>
+            <h2>Mais que pizza. <span class="gradient-text">Uma experiência.</span></h2>
+            <p>Um espaço inspirado na cultura retrô, com uma proposta de lazer além da refeição.</p>
+            <a class="button" href="#sobre">Origem da ideia <span aria-hidden="true">&nbsp;↘</span></a>
+          </div>
+        </article>
+
+        <div class="carousel-controls">
+          <button class="arrow" id="prev" type="button" aria-label="Slide anterior">‹</button>
+          <div class="dots" id="dots" aria-label="Escolher slide">
+            <button class="dot" type="button" aria-label="Ir para slide 1" aria-current="true"></button>
+            <button class="dot" type="button" aria-label="Ir para slide 2" aria-current="false"></button>
+            <button class="dot" type="button" aria-label="Ir para slide 3" aria-current="false"></button>
+          </div>
+          <button class="arrow" id="next" type="button" aria-label="Próximo slide">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Explore o projeto</span>
+          <h2>Conheça o universo <span class="gradient-text">Futuro's Pizza</span></h2>
+          <p>Confira nossa galeria de imagens conceituais<br> <br></p>
+          <a class="button" href="galeria/galeria.html">Ver a galeria completa <span aria-hidden="true">&nbsp;↘</span></a>
+          <br><br>
+          <p>Nosso cardápio<br>
+          <br></p>
+          <a class="button" href="/cardapio/cardapio.html">Em breve! <span aria-hidden="true">&nbsp;↘</span></a>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="conceito">
+      <div class="container">
+        <div class="concept">
+          <div>
+            <span class="eyebrow">Nossa proposta</span>
+            <h2>Mais do que uma pizzaria: <span class="gradient-text">gastronomia, diversão e nostalgia.</span></h2>
+            <p>A Futuro's Pizza é uma proposta de pizzaria temática em Mongaguá que busca oferecer uma experiência presencial diferenciada, inspirada na estética e na cultura dos anos 80 e 90.</p>
+            <p>O conceito une um ambiente marcante, momentos de convivência e uma experiência gastronômica pensada para jovens, adultos, famílias e visitantes.</p>
+            <div class="chips">
+              <!--
+              <span class="chip">🍕 Gastronomia</span>
+              <span class="chip">🕹️ Entretenimento</span>
+              <span class="chip">✨ Nostalgia</span>
+              -->
+            </div>
+          </div>
+          <div class="concept-image">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1100&q=85" alt="Interior de restaurante usado como referência visual" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projeto">
+      <div class="container">
+        <div class="cta">
+          <span class="eyebrow">Projeto acadêmico</span>
+          <h2>FUTURO'S <span class="gradient-text">PIZZA</span></h2>
+          <p>Uma nova proposta de experiência para o setor de pizzarias. Projeto desenvolvido como parte do TCC do grupo Futurama.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="cta">
+          <h2><span class="gradient-text">QUEM SOMOS?</span></h2>
+          <p>Somos um grupo de jovens estudantes do curso de Administração da Etec Adolph Berezin, composto por 6 membros, sendo eles: Cauã rodrigo, Felipe souza, hentony robert, Isaque altino, Matheus irmão e Waldir eduardo.<br><br>
+            Nem sempre nossa ideia foi criar uma pizzaria. inicialmente, Nosso TCC tinha como objetivo estudar o avanço da tecnologia na educação e os problemas que as escolas publicas vinham enfrentando. Somente após varias discussões e conflitos de ideias que decidimos mudar o tcc para um projeto que visava abrir um modelo de negócios.<br><br>
+            Durante o segundo modulo do curso, uma ideia foi levantada com base em um problema diariamente comentado por boa parte dos moradores de Mongaguá. O problema era a falta de opções de entretenimento e inovação na região. A partir dai, começamos a desenvolver nossa atual proposta.<br><br>
+            Hoje, nosso objetivo é proporcionar aos clientes uma experiência completa, que vai além da simples consumação de pizza. Queremos criar um ambiente acolhedor e inovador, onde os clientes possam desfrutar de uma refeição deliciosa em um ambiente único.</p>
+          <img src="/imgs/futurama.jpeg" alt="Imagem grupo" loading="lazy"><br><br>
+          <span class="eyebrow">Confira nossas redes</span><br><br>
+          <div class="social-links">
+            <a href="https://www.instagram.com/grupofuturama_etec/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/imgs/instagram.png" alt="Logo do Instagram"></a>
+          </div><br><br>
+          <a class="button" href="#inicio">Voltar ao topo<span aria-hidden="true">&nbsp;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Grupo futurama</span>
+      <span>Site desenvolvido por <a href="https://instagram.com/isaquealtino_" target="_blank" rel="noopener noreferrer">Isaque Altino</a></span>
+      <span>Conceitos visuais ilustrativos.</span>
+    </div>
+  </footer>
+
+  <script>
+    /* =========================================================
+       CARROSSEL:
+       - O intervalo controla a troca automática (em milissegundos).
+       - Para desativar a troca automática, remova o setInterval no final.
+       - Os botões e os indicadores continuam funcionando manualmente.
+       ========================================================= */
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const dots = Array.from(document.querySelectorAll(".dot"));
+    const previousButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+    let currentSlide = 0;
+    let carouselTimer;
+
+    function showSlide(index) {
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle("is-active", i === currentSlide));
+      dots.forEach((dot, i) => dot.setAttribute("aria-current", i === currentSlide ? "true" : "false"));
+    }
+
+    function restartTimer() {
+      clearInterval(carouselTimer);
+      carouselTimer = setInterval(() => showSlide(currentSlide + 1), 6000); // 6000 = 6 segundos
+    }
+
+    previousButton.addEventListener("click", () => { showSlide(currentSlide - 1); restartTimer(); });
+    nextButton.addEventListener("click", () => { showSlide(currentSlide + 1); restartTimer(); });
+    dots.forEach((dot, i) => dot.addEventListener("click", () => { showSlide(i); restartTimer(); }));
+
+    // Atualiza automaticamente o ano no rodapé.
+    document.getElementById("year").textContent = new Date().getFullYear();
+    restartTimer();
+  </script>
+</body>
+</html>
