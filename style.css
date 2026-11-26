@@ -235,3 +235,14 @@
   border-color: 2px solid var(--pink);
 }
 
+
+.group-photo {
+  width: 100%;
+  max-width: 650px; /* Reduzido para acompanhar a proporção mais quadrada da foto */
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 12px; /* Opcional: deixa as bordas arredondadas como o vídeo acima */
+  transition: border-color 0.2s ease;
+  overflow: hidden;
+}
